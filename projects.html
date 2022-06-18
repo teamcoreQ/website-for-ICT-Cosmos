@@ -10,10 +10,11 @@
     </script>
 
     <!-- swiperjs.com user swiper form cdn -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
     <!-- font  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    
     <!-- custom css file link -->
     <link rel="stylesheet" href="./css/nav.css">
 
@@ -29,50 +30,33 @@
 </head>
 
 <body>
-
     <!-- nav-bar section  -->
     <header>
 
         <div id="menu-bar" class="fas fa-bars"></div>
 
-        <a href="#" class="logo">ICT</a>
+        <a href="#" class="logo"><span>I</span>CT</a>
 
-        <div class="navbar">
-            <div class="home">
-                <a href="#home">Home</a>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Events
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Upcomming</a>
-                    <a href="#">Ongoing</a>
-                    <a href="#">Previous</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">projects
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">ABC</a>
-                    <a href="#">DEF</a>
-                    <a href="#">GHI</a>
-                </div>
-            </div>
-
-            <div class="about_us">
-                <a href="#about us">About Us</a>
-            </div>
-
-            <div class="join_us">
-                <a href="#join Us">Join Us</a>
-            </div>
-        </div>
+        <nav class="navbar">
+            <span class="home">
+                <a href="./index.html">Home</a>
+            </span>
+            <span class="events">
+                <a href="./events.html">Events</a>
+            </span>
+            <span class="projects">
+                <a href="./projects.html">Projects</a>
+            </span>
+            <span class="about">
+                <a href="./about.html">About Us</a>
+            </span>
+            <span class="joinus">
+                <a href="./join_us.html">Join Us</a>
+            </span>
+        </nav>
 
     </header>
+
 
 
     <!-- Example Code -->
@@ -82,20 +66,23 @@
 
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active"
-                    aria-label="Slide 1" aria-current="true"></button>
+                <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+                    aria-current="true"></button>
                 <button type="button" data-bs-target="#slider2" data-bs-slide-to="1" aria-label="Slide 2"
                     class=""></button>
                 <button type="button" data-bs-target="#slider3" data-bs-slide-to="2" aria-label="Slide 3"
                     class=""></button>
             </div>
+
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000" id="slider1">
+
+                <div class="carousel-item active" data-bs-interval="5000ms" id="slider1">
                     <!-- change slider image size from here -->
                     <center>
 
                         <picture>
-                            <source media="(min-width: 327px)" type="image/jpeg" srcset="./projects/images/slider_2nd.jpeg">
+                            <source media="(min-width: 327px)" type="image/jpeg"
+                                srcset="./projects/images/slider_2nd.jpeg">
                             <source type="image/jpeg" srcset="./projects/images/slider_2nd.jpeg">
                             <img src="./projects/images/slider_2nd.jpeg" alt="" width="" height="550px">
                         </picture>
@@ -112,14 +99,18 @@
 
                     <div class="carousel-caption">
                         <span class="event_slider_1st_heading" style="color: white;font-size: 22px;">ABC project</span>
-                        <p class="event_slider_1st_body" style="color: white;font-size: 16px;">Some representative placeholder content for the third
+                        <p class="event_slider_1st_body" style="color: white;font-size: 16px;">Some representative
+                            placeholder content for the third
                             slide.</p>
                     </div>
                 </div>
-                <div class="carousel-item " data-bs-interval="2000 " id="slider2">
+
+
+                <div class="carousel-item " data-bs-interval="5000ms " id="slider2">
                     <center>
                         <picture>
-                            <source media="(min-width: 327px)" type="image/jpeg" srcset="./projects/images/slider_1st.jpeg">
+                            <source media="(min-width: 327px)" type="image/jpeg"
+                                srcset="./projects/images/slider_1st.jpeg">
                             <source type="image/jpeg" srcset="./projects/images/slider_1st.jpeg">
                             <img src="./projects/images/slider_1st.jpeg" alt="" width="" height="550px">
                         </picture>
@@ -131,17 +122,22 @@
                     <!-- <text x="50% " y="50% " fill="#bbb " dy=".3em ">slide 2  </text> -->
                     </svg>
 
-                    <div class="carousel-caption" data-bs-interval="1000 " id="slider3">
+
+                    <div class="carousel-caption" id="slider3">
                         <span class="event_slider_1st_heading" style="color: white;font-size: 22px;">BCD project</span>
-                        <p class="event_slider_1st_body" style="color: white;font-size: 16px;">Some representative placeholder content for the third
+                        <p class="event_slider_1st_body" style="color: white;font-size: 16px;">Some representative
+                            placeholder content for the third
                             slide.</p>
                     </div>
                 </div>
-                <div class="carousel-item ">
+
+
+                <div class="carousel-item " data-bs-interval="5000ms ">
                     <center>
 
                         <picture>
-                            <source media="(min-width: 327px)" type="image/jpeg" srcset="./projects/images/slider_3rd.jpeg">
+                            <source media="(min-width: 327px)" type="image/jpeg"
+                                srcset="./projects/images/slider_3rd.jpeg">
                             <source type="image/jpeg" srcset="./projects/images/slider_3rd.jpeg">
                             <img src="./projects/images/slider_3rd.jpeg" alt="" width="" height="550px">
                         </picture>
@@ -154,22 +150,14 @@
 
                     <div class="carousel-caption">
                         <span class="event_slider_1st_heading" style="color: white;font-size: 22px;">DEF project</span>
-                        <p class="event_slider_1st_body" style="color: white;font-size: 16px;">Some representative placeholder content for the third
+                        <p class="event_slider_1st_body" style="color: white;font-size: 16px;">Some representative
+                            placeholder content for the third
                             slide.</p>
                     </div>
                 </div>
             </div>
 
-            <button class="carousel-control-prev " type="button " data-bs-target="#carouselExampleDark "
-                data-bs-slide="prev ">
-                <span class="carousel-control-prev-icon " aria-hidden="true "></span>
-                <span class="visually-hidden ">Previous</span>
-            </button>
-            <button class="carousel-control-next " type="button " data-bs-target="#carouselExampleDark "
-                data-bs-slide="next ">
-                <span class="carousel-control-next-icon " aria-hidden="true "></span>
-                <span class="visually-hidden ">Next</span>
-            </button>
+
         </div>
 
         <!-- End Example Code -->
@@ -180,7 +168,7 @@
 
 
 
-        
+
 
         <!-- /.row -->
 
@@ -192,7 +180,7 @@
         </style>
 
         <!-- 1st featurette -->
-        
+
 
         <hr class="featurette-divider">
 
@@ -217,37 +205,54 @@
 
         <!-- 2nd featurette -->
         <hr class="featurette-divider">
-    
+
         <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-    
-          </div>
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for
+                        yourself.</span></h2>
+                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how
+                    this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                        dy=".3em">500x500</text>
+                </svg>
+
+            </div>
         </div>
 
 
         <!-- 3rd featurette -->
         <hr class="featurette-divider">
-    
+
         <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-          </div>
-          <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-    
-          </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+                        class="text-muted">Checkmate.</span></h2>
+                <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+                    intended to be actually read, simply here to give you a better view of what this would look like
+                    with some actual content. Your content.</p>
+            </div>
+            <div class="col-md-5">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                        dy=".3em">500x500</text>
+                </svg>
+
+            </div>
         </div>
 
 
-        
 
-       
+
+
 
         <hr class="featurette-divider " />
 
@@ -365,86 +370,12 @@
                         <br>
                         <!-- <button class="btn btn-light" type="submit">Button</button> -->
 
-                        <!-- terms and conditions css  -->
-                        <style type="text/css">
-                            .button {
-                                width: 150px;
-                                padding: 10px;
-                                background-color: #FF8C00;
-                                box-shadow: -8px 8px 10px 3px rgba(0, 0, 0, 0.2);
-                                font-weight: bold;
-                                text-decoration: none;
-                            }
-
-                            #cover {
-                                position: fixed;
-                                top: 0;
-                                left: 0;
-                                background: rgba(0, 0, 0, 0.6);
-                                z-index: 5;
-                                width: 100%;
-                                height: 100%;
-                                display: none;
-                            }
-
-                            #loginScreen {
-                                height: 380px;
-                                width: 340px;
-                                margin: 0 auto;
-                                position: absolute;
-                                z-index: 10;
-                                display: none;
-                                background: url(login.png) no-repeat;
-                                border: 5px solid #cccccc;
-                                border-radius: 10px;
-                                top: 300px;
-                                left: 300px;
-                            }
-
-                            #loginScreen:target,
-                            #loginScreen:target+#cover {
-                                display: block;
-                                opacity: 2;
-                            }
-
-                            .cancel {
-                                display: block;
-                                position: absolute;
-                                top: 3px;
-                                right: 2px;
-
-                                color: #fff;
-                                height: 100px;
-                                width: 15px;
-                                font-size: 30px;
-                                text-decoration: none;
-                                text-align: center;
-                                font-weight: bold;
-                            }
-                        </style>
 
                         <!-- terms and conditions pop-up -->
-
-                        <div align="center" class="terms_and_conditions"><br><br><a href="#loginScreen">Terms and
+                        <div align="center" class="terms_and_conditions"><a href="./terms.pdf" target="_blank">Terms and
                                 conditions</a>
                         </div>
-                        <div id="loginScreen">
-                            <a href="#" class="cancel">cancel</a>
-                            <div class="card bg-dark text-white">
-                                <img src="..." class="card-img" alt="...">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to
-                                        additional content. This content is a little bit longer.</p>
-                                    <p class="card-text">Last updated 3 mins ago</p>
-                                </div>
-                            </div>
 
-
-                        </div>
-                        <div id="cover">
-                        </div>
 
 
                     </ul></a>
@@ -470,10 +401,12 @@
 
 
 
-
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js "></script>
+
+<!-- custom js file link -->
+<script src="./js/nav.js"></script>
 </div>
 
 
