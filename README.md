@@ -1,8 +1,11 @@
 # UI_dev
+
 The UI development project for ICT_Cosmos.
 
 
 __________________
-designed by coreQ
+designed by ***<a href="http://coreq.ujjwaldhakal.com.np/">coreQ</a>***
 <br/>
-contact us at mail.coreQ@gmail.com or visit http://coreq.ujjwaldhakal.com.np/
+Mail us: < a href="mailto:mail.coreQ@gmail.com">Gmail</a> 
+<br>
+connect with us: <a href="https://instagram.com/insta.coreq">Instagram</a>
